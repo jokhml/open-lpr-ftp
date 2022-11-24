@@ -209,7 +209,7 @@ def main():
 
 
         authorizer = DummyAuthorizer()
-        authorizer.add_user('user', '12345', homedir=config['storage']['upload-path'], perm='elradfmwMT')
+        authorizer.add_user('user', 'password', homedir=config['storage']['upload-path'], perm='elradfmwMT')
         authorizer.add_anonymous(homedir='.')
 
         logger.info("Connecting to broker")
